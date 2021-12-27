@@ -1,0 +1,74 @@
+.content {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 8px;
+}
+
+.content a {
+    outline: none;
+    text-decoration: none;
+    color: burlywood;
+}
+
+.headerText {
+    padding: 8px;
+    margin: 0;
+    background-color: burlywood;
+}
+
+.headerText h1, h3 {
+    color: white;
+}
+
+.headerText p {
+    color: white;
+}
+
+.projects {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectItem {
+    padding: 10px;
+}
+
+.workExpirience {
+    padding: 8px;
+    margin: 0;
+}
+
+.education {
+    padding: 8px;
+    margin: 0;
+}
+
+.githubInfo {
+    text-align: center;
+    padding: 8px;
+}
+
+.projectBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.burger {
+    width: 270px;
+}
+
+.todo {
+    width: 452px;
+}
+
+.counter {
+    width: 360px;
+}
+
