@@ -1,0 +1,23 @@
+* {
+  font-family: 'Eczar', serif;
+}
+
+.App {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+}
+
+.asideContainer {
+  width: 15%;
+}
+.contentContainer {
+  width: 90%;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  color: burlywood;
+}
