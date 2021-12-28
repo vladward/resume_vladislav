@@ -9,6 +9,7 @@
 }
 
 .header img {
+    margin: 10px 15px 0 10px;
     width: 200px;
     height: 200px;
     border-radius: 50% 20% / 10% 40%;;
@@ -35,6 +36,11 @@
     margin: 0;
 }
 
+.skillBlock ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 .interests {
     display: flex;
     flex-direction: column;
@@ -51,3 +57,14 @@
 
 }
 
+.radioContainer {
+    display: flex;
+}
+
+.on {
+    background-color: green;
+}
+
+.off {
+    background-color: red;
+}
