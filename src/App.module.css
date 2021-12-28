@@ -3,18 +3,27 @@
 }
 
 .App {
-  background-color: white;
+  background-color: beige;
   height: 100vh;
   display: flex;
   flex-direction: row;
-  max-width: 90%;
+  max-width: 1440px;
 }
 
 .asideContainer {
-  width: 15%;
+  width: 250px;
 }
 .contentContainer {
-  width: 90%;
+  padding-right: 17px;
+  width: 1150px;
+}
+
+h1 {
+  margin-top: -12px;
+}
+
+h3 {
+  margin-top: -13px;
 }
 
 h1, h2, h3, h4, h5 {
