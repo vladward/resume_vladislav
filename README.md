@@ -1,4 +1,3 @@
-# Link to resume
+<a href="https://vladward.github.io/resume_vladislav/">Link to resume</a>
 
-https://vladward.github.io/resume_vladislav/
-
+Created with React
