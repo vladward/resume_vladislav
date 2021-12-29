@@ -17,6 +17,7 @@ let initialState = {
         linkedIn: 'LinkedIn account',
         github: 'Github account'
     },
+    contactsTitle: 'Contacts:',
     workingWith: [
         {id: 1, title: 'HTML'},
         {id: 2, title: 'CSS'},
@@ -33,30 +34,76 @@ let initialState = {
         {id: 13, title: 'Postman'},
         {id: 14, title: 'BEM'},
     ],
+    workingWithTitle: 'Working with:',
     interests: [
         {id: 1, title: 'Web Development'},
         {id: 2, title: 'Video Games'},
-        {id: 3, title :'Cars'},
+        {id: 3, title: 'Cars'},
         {id: 4, title: 'Travel'},
     ],
+    interestsTitle: 'Interests:',
     work: [
-        {id: 1, title: 'System administrator -  Health care institution “Shchuchin Central District Hospital” (2014 - 2016)'},
+        {
+            id: 1,
+            title: 'System administrator -  Health care institution “Shchuchin Central District Hospital” (2014 - 2016)'
+        },
         {id: 2, title: 'Driver - Logistics transport company (2016 - 2021)'},
         {id: 3, title: 'Junior React developer (2021 - present)'},
     ],
+    workTitle: 'Work Experience:',
     education: [
-        {id: 1, title: 'Information technology software Technological College Educational Institution "The Yanka Kupala State University of Grodno" (2010 - 2014)'},
+        {
+            id: 1,
+            title: 'Information technology software Technological College Educational Institution "The Yanka Kupala State University of Grodno" (2010 - 2014)'
+        },
         {id: 2, title: 'Front-end React developer - It-incubator.by (2021/09 - 2022/02)'},
     ],
+    educationTitle: 'Education:',
     projects: [
-        {id: 1, link: 'https://vladward.github.io/burger-vlad/', title: 'Burger', description: 'Simple and fun website create by HTML, CSS and JS', wip: false},
-        {id: 2, link: 'https://vladward.github.io/TO_DO/', title: 'Todolist', description: 'Web application with React, TypeScript and Redux', wip: true},
-        {id: 3, link: 'https://vladward.github.io/currency_exchange/',
-            title: 'Currency exchange', description: 'Web application with React, Typescript, Redux, React-redux', wip: false},
-        {id: 4, link: 'https://vladward.github.io/counter/', title: 'Counter', description: 'Web application with React, TypeScript and Redux', wip: false},
-        {id: 5, link: 'https://vladward.github.io/components/', title: 'Storybook components', description: 'Simple components for usage create by StoryBook, React, Typescript', wip: true},
-        {id: 6, link: 'https://vladward.github.io/sn-app/', title: 'Social Network', description: 'Create by React, Redux, Typescript', wip: true},
-    ]
+        {
+            id: 1,
+            link: 'https://vladward.github.io/burger-vlad/',
+            title: 'Burger',
+            description: 'Simple and fun website create by HTML, CSS and JS',
+            wip: false
+        },
+        {
+            id: 2,
+            link: 'https://vladward.github.io/TO_DO/',
+            title: 'Todolist',
+            description: 'Web application with React, TypeScript and Redux',
+            wip: true
+        },
+        {
+            id: 3,
+            link: 'https://vladward.github.io/currency_exchange/',
+            title: 'Currency exchange',
+            description: 'Web application with React, Typescript, Redux, React-redux',
+            wip: false
+        },
+        {
+            id: 4,
+            link: 'https://vladward.github.io/counter/',
+            title: 'Counter',
+            description: 'Web application with React, TypeScript and Redux',
+            wip: false
+        },
+        {
+            id: 5,
+            link: 'https://vladward.github.io/components/',
+            title: 'Storybook components',
+            description: 'Simple components for usage create by StoryBook, React, Typescript',
+            wip: true
+        },
+        {
+            id: 6,
+            link: 'https://vladward.github.io/sn-app/',
+            title: 'Social Network',
+            description: 'Create by React, Redux, Typescript',
+            wip: true
+        },
+    ],
+    projectsTitle: 'Projects Links:'
 }
 let ruInitialState = {
     aboutMe: {
@@ -69,10 +116,11 @@ let ruInitialState = {
     },
     contacts: {
         mail: 'vladward13@gmail.com',
-        location: 'Minsk, Belarus',
-        linkedIn: 'LinkedIn account',
-        github: 'Github account'
+        location: 'Минск, Беларусь',
+        linkedIn: 'LinkedIn аккаунт',
+        github: 'Github аккаунт'
     },
+    contactsTitle: 'Контакты:',
     workingWith: [
         {id: 1, title: 'HTML'},
         {id: 2, title: 'CSS'},
@@ -89,30 +137,73 @@ let ruInitialState = {
         {id: 13, title: 'Postman'},
         {id: 14, title: 'BEM'},
     ],
+    workingWithTitle: 'Работал с: ',
     interests: [
         {id: 1, title: 'Веб разработка'},
         {id: 2, title: 'Видео игры'},
         {id: 3, title: 'Автомобили'},
         {id: 4, title: 'Путешествия'},
     ],
+    interestsTitle: 'Интересы:',
     work: [
-        {id: 1, title: 'Системный администратор - Учреждение здравоохранения "Щучинская центральная районная больница (2014 - 2016)"'},
+        {
+            id: 1,
+            title: 'Системный администратор - Учреждение здравоохранения "Щучинская центральная районная больница (2014 - 2016)"'
+        },
         {id: 2, title: 'Водитель - Логистическая транспортная компания (2016 - 2021'},
         {id: 3, title: 'Младший React разработчик (2021 - настоящее время'},
     ],
+    workTitle: 'Опыт работы:',
     education: [
         {id: 1, title: 'Гродненский Химико-Технологический колледж имени Янки Купалы (2010 - 2014)'},
         {id: 2, title: 'Фронтенд Инкубатор It-incubator.by (2021/09 - 2022/02)'},
     ],
+    educationTitle: 'Образование:',
     projects: [
-        {id: 1, link: 'https://vladward.github.io/burger-vlad/', title: 'Бургер', description: 'Простой и веселый сайт о бургерах созданный при помощи HTML, CSS и Javascript', wip: false},
-        {id: 2, link: 'https://vladward.github.io/TO_DO/', title: 'Список дел', description: 'Веб-приложение разработанное с помощью React, Typescript и Redux', wip: true},
-        {id: 3, link: 'https://vladward.github.io/currency_exchange/',
-            title: 'Обмен валюты', description: 'Веб-приложение разработанное с помощью React, Typescript, Redux и React-Redux', wip: false},
-        {id: 4, link: 'https://vladward.github.io/counter/', title: 'Счетчик', description: 'Веб-приложение разработанное с помощью React, Typescript и Redux', wip: false},
-        {id: 5, link: 'https://vladward.github.io/components/', title: 'Компоненты Storybook', description: 'Простые компоненты для использования на проектах, созданны при использовании Storybook, React и Typescript', wip: true},
-        {id: 6, link: 'https://vladward.github.io/sn-app/', title: 'Социальная сеть', description: 'Создана при помощи библиотек React, Redux и Typescript', wip: true},
-    ]
+        {
+            id: 1,
+            link: 'https://vladward.github.io/burger-vlad/',
+            title: 'Бургер',
+            description: 'Простой и веселый сайт о бургерах созданный при помощи HTML, CSS и Javascript',
+            wip: false
+        },
+        {
+            id: 2,
+            link: 'https://vladward.github.io/TO_DO/',
+            title: 'Список дел',
+            description: 'Веб-приложение разработанное с помощью React, Typescript и Redux',
+            wip: true
+        },
+        {
+            id: 3,
+            link: 'https://vladward.github.io/currency_exchange/',
+            title: 'Обмен валюты',
+            description: 'Веб-приложение разработанное с помощью React, Typescript, Redux и React-Redux',
+            wip: false
+        },
+        {
+            id: 4,
+            link: 'https://vladward.github.io/counter/',
+            title: 'Счетчик',
+            description: 'Веб-приложение разработанное с помощью React, Typescript и Redux',
+            wip: false
+        },
+        {
+            id: 5,
+            link: 'https://vladward.github.io/components/',
+            title: 'Компоненты Storybook',
+            description: 'Простые компоненты для использования на проектах, созданны при использовании Storybook, React и Typescript',
+            wip: true
+        },
+        {
+            id: 6,
+            link: 'https://vladward.github.io/sn-app/',
+            title: 'Социальная сеть',
+            description: 'Создана при помощи библиотек React, Redux и Typescript',
+            wip: true
+        },
+    ],
+    projectsTitle: 'Ссылки на проекты:'
 }
 
 export const App = () => {
@@ -125,10 +216,25 @@ export const App = () => {
     return (
         <div className={s.App}>
             <div className={s.asideContainer}>
-                <Aside setLang={setlang} contacts={state.contacts} workWith={state.workingWith} interests={state.interests}/>
+                <Aside setLang={setlang}
+                       contacts={state.contacts}
+                       contactsTitle={state.contactsTitle}
+                       workWith={state.workingWith}
+                       workWithTitle={state.workingWithTitle}
+                       interests={state.interests}
+                       interestsTitle={state.interestsTitle}
+                />
             </div>
             <div className={s.contentContainer}>
-                <Content aboutMe={state.aboutMe} workExp={state.work} education={state.education} projects={state.projects}/>
+                <Content aboutMe={state.aboutMe}
+                         aboutMeTitle={state.aboutMeTitle}
+                         workExp={state.work}
+                         workExpTitle={state.workTitle}
+                         education={state.education}
+                         educationTitle={state.educationTitle}
+                         projects={state.projects}
+                         projectsTitle={state.projectsTitle}
+                />
             </div>
         </div>
     )
