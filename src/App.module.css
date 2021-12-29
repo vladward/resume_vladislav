@@ -1,24 +1,64 @@
-* {
-  font-family: 'Eczar', serif;
-}
-
 .App {
   background-color: beige;
-  height: 100vh;
   display: flex;
   flex-direction: row;
   max-width: 1440px;
 }
 
 .asideContainer {
-  width: 250px;
+  max-width: 250px;
 }
 .contentContainer {
-  padding-right: 17px;
-  width: 1150px;
+  padding-right: 5px;
+  max-width: 1190px;
 }
 
 h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   color: burlywood;
+  margin-top: -2px;
+  margin-bottom: -2px;
 }
+
+@media screen and (max-width: 1440px){
+  h1 {
+    margin-bottom: -4px;
+  }
+  h1, h2, h3, h4, h5 {
+    padding-top: -4px;
+    padding-bottom: -4px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .githubInfo{
+    max-width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  body {
+    font-size: 13px;
+  }
+  .App {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  h1, h2 ,h3, h4, h5, h6 {
+    padding-top: -6px;
+    padding-bottom: -6px;
+  }
+  body {
+    font-size: 12px;
+  }
+  .githubInfo{
+    max-width: 768px;
+  }
+  .headerImg {
+    width: 150px;
+  }
+}
+
+

@@ -8,10 +8,9 @@
     color: burlywood;
 }
 
-.header img {
+.headerImg {
     margin: 10px 15px 0 10px;
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
     border-radius: 50% 20% / 10% 40%;;
 }
 
@@ -61,10 +60,9 @@
     display: flex;
 }
 
-.on {
-    background-color: green;
+@media screen and (max-width: 768px){
+    .headerImg {
+        width: 150px;
+    }
 }
 
-.off {
-    background-color: red;
-}
