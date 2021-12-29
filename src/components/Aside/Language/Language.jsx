@@ -17,7 +17,7 @@ export const Language = (props) => {
     const styleRu = {
         width: "30px",
         height: "30px",
-        border: "1px solid black",
+        border: "1px solid gray",
         borderRight: "none",
         display: "inline-block",
         backgroundColor: onOff ? "burlywood" : "white",
@@ -27,7 +27,7 @@ export const Language = (props) => {
     const styleEng = {
         width: "30px",
         height: "30px",
-        border: "1px solid black",
+        border: "1px solid gray",
         borderLeft: "none",
         display: "inline-block",
         backgroundColor: onOff ? "white" : "burlywood",
