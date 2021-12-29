@@ -11,10 +11,10 @@ export const Content = (props) => {
     return (
         <div className={s.content}>
             <HeaderText aboutMe={props.aboutMe}/>
-            <WorkExperience workExp={props.education}/>
-            <Education education={props.education} />
+            <WorkExperience workExp={props.workExp} workExpTitle={props.workExpTitle}/>
+            <Education education={props.education} educationTitle={props.educationTitle}/>
             <GithubActivity/>
-            <Projects projects={props.projects} />
+            <Projects projects={props.projects} projectsTitle={props.projectsTitle}/>
         </div>
     )
 }

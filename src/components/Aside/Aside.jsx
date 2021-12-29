@@ -11,9 +11,9 @@ export const Aside = (props) => {
         <div className={s.wrapper}>
             <Header/>
             <Language  setLang={props.setLang}/>
-            <MySkills workWith={props.workWith}/>
-            <MyInterests interests={props.interests}/>
-            <MyContacts contacts={props.contacts}/>
+            <MySkills workWith={props.workWith} workWithTitle={props.workWithTitle}/>
+            <MyInterests interests={props.interests} interestsTitle={props.interestsTitle}/>
+            <MyContacts contacts={props.contacts} contactsTitle={props.contactsTitle}/>
         </div>
     )
 }
