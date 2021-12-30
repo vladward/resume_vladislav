@@ -9,7 +9,7 @@ import {Language} from './Language/Language'
 export const Aside = (props) => {    
     return (
         <div className={s.wrapper}>
-            <Header/>
+            <Header aboutMe={props.aboutMe}/>
             <Language  setLang={props.setLang}/>
             <MySkills workWith={props.workWith} workWithTitle={props.workWithTitle}/>
             <MyInterests interests={props.interests} interestsTitle={props.interestsTitle}/>
