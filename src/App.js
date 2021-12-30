@@ -71,7 +71,7 @@ let initialState = {
             id: 2,
             link: 'https://vladward.github.io/TO_DO/',
             title: 'Todolist',
-            description: 'Web application with React, TypeScript and Redux',
+            description: 'Web application with React, TypeScript and Redux, Storybook',
             wip: true
         },
         {
@@ -90,13 +90,6 @@ let initialState = {
         },
         {
             id: 5,
-            link: 'https://vladward.github.io/components/',
-            title: 'Storybook components',
-            description: 'Simple components for usage create by StoryBook, React, Typescript',
-            wip: true
-        },
-        {
-            id: 6,
             link: 'https://vladward.github.io/sn-app/',
             title: 'Social Network',
             description: 'Create by React, Redux, Typescript',
@@ -171,7 +164,7 @@ let ruInitialState = {
             id: 2,
             link: 'https://vladward.github.io/TO_DO/',
             title: 'Список дел',
-            description: 'Веб-приложение разработанное с помощью React, Typescript и Redux',
+            description: 'Веб-приложение разработанное с помощью React, Typescript, Redux и Storybook',
             wip: true
         },
         {
@@ -187,13 +180,6 @@ let ruInitialState = {
             title: 'Счетчик',
             description: 'Веб-приложение разработанное с помощью React, Typescript и Redux',
             wip: false
-        },
-        {
-            id: 5,
-            link: 'https://vladward.github.io/components/',
-            title: 'Компоненты Storybook',
-            description: 'Простые компоненты для использования на проектах, созданны при использовании Storybook, React и Typescript',
-            wip: true
         },
         {
             id: 6,
