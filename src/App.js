@@ -203,6 +203,7 @@ export const App = () => {
         <div className={s.App}>
             <div className={s.asideContainer}>
                 <Aside setLang={setlang}
+                       aboutMe={state.aboutMe}
                        contacts={state.contacts}
                        contactsTitle={state.contactsTitle}
                        workWith={state.workingWith}
