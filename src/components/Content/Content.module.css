@@ -74,45 +74,8 @@
     width: 360px;
 }
 
-@media screen and (max-width: 420px){
-    .projectItem {
-        position: absolute;
-        top: 585px;
-        left: 0;
-    }
+@media screen and (max-width: 480px) {
     .githubInfo {
         display: none;
-    }
-}
-
-@media screen and (max-width: 411px){
-
-}
-
-@media screen and (max-width: 375px){
-    h1 {
-        margin-top: -1px;
-        margin-bottom: -1px;
-        padding: -1px;
-    }
-    .githubInfo {
-        display: none;
-    }
-
-    .education {
-        position: absolute;
-        top: 488px;
-        left: 0;
-    }
-    .education h2 {
-        text-align: center;
-    }
-    .projectItem {
-        position: absolute;
-        top: 578px;
-        left: 0;
-    }
-    .projectItem h2 {
-        text-align: center;
     }
 }

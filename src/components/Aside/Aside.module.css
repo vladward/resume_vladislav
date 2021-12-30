@@ -60,9 +60,39 @@
     display: flex;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
+    .radioContainer {
+        font-size: 12px;
+        position: absolute;
+        top: 113px;
+        left: 30px;
+    }
     .headerImg {
-        width: 150px;
+        flex-wrap: wrap;
+        max-width: 150px;
+    }
+    .wrapper {
+        flex-direction: row;
+    }
+    .headerImg {
+        max-width: 100px;
+    }
+    .skills, .interests, .contactItem {
+        padding: 0;
     }
 }
 
+@media screen and (max-width: 461px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .radioContainer {
+        left: 42px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .wrapper {
+        flex-wrap: wrap;
+    }
+}
