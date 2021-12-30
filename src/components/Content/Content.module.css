@@ -79,3 +79,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 461px) {
+.headerTextAboutMe {
+    display: none;
+}
+}

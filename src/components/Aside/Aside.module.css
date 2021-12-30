@@ -8,6 +8,10 @@
     color: burlywood;
 }
 
+.header {
+    display: flex;
+}
+
 .headerImg {
     margin: 10px 15px 0 10px;
     max-width: 200px;
@@ -59,6 +63,11 @@
 .radioContainer {
     display: flex;
 }
+@media screen and (max-width: 2560px) {
+    .headerAboutMe {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 600px){
     .radioContainer {
@@ -68,14 +77,11 @@
         left: 30px;
     }
     .headerImg {
-        flex-wrap: wrap;
-        max-width: 150px;
+        max-width: 80px;
+        max-height: 80px;
     }
     .wrapper {
         flex-direction: row;
-    }
-    .headerImg {
-        max-width: 100px;
     }
     .skills, .interests, .contactItem {
         padding: 0;
@@ -87,7 +93,24 @@
         flex-wrap: wrap;
     }
     .radioContainer {
-        left: 42px;
+        top: 270px;
+        left: 270px;
+    }
+    .skills ul{
+        padding-right: 10px;
+    }
+    .headerAboutMe {
+        display: block;
+    }
+    .headerAboutMe h5 {
+        color: burlywood;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .radioContainer {
+        top: 280px;
+        left: 210px;
     }
 }
 
