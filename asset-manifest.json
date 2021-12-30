@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/resume_vladislav/static/css/main.8b7f993d.css",
-    "main.js": "/resume_vladislav/static/js/main.66e79b04.js",
+    "main.css": "/resume_vladislav/static/css/main.b68a568c.css",
+    "main.js": "/resume_vladislav/static/js/main.29a3b185.js",
     "static/js/787.a2eb1df2.chunk.js": "/resume_vladislav/static/js/787.a2eb1df2.chunk.js",
     "static/media/ava2.png": "/resume_vladislav/static/media/ava2.b8ebb234f142f9feeab5.png",
     "static/media/linkedin.png": "/resume_vladislav/static/media/linkedin.5a2e126f3bd69ed90453.png",
     "static/media/gitImg.png": "/resume_vladislav/static/media/gitImg.e58c6974eb7db84ae732.png",
     "index.html": "/resume_vladislav/index.html",
-    "main.8b7f993d.css.map": "/resume_vladislav/static/css/main.8b7f993d.css.map",
-    "main.66e79b04.js.map": "/resume_vladislav/static/js/main.66e79b04.js.map",
+    "main.b68a568c.css.map": "/resume_vladislav/static/css/main.b68a568c.css.map",
+    "main.29a3b185.js.map": "/resume_vladislav/static/js/main.29a3b185.js.map",
     "787.a2eb1df2.chunk.js.map": "/resume_vladislav/static/js/787.a2eb1df2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b7f993d.css",
-    "static/js/main.66e79b04.js"
+    "static/css/main.b68a568c.css",
+    "static/js/main.29a3b185.js"
   ]
 }
