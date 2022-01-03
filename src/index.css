@@ -19,7 +19,7 @@ code {
 
 
 @media screen and (max-width: 700px){
-  .App {
+  .MainContent {
     flex-direction: row;
   }
   .wrapper {

@@ -81,7 +81,7 @@
 }
 
 @media screen and (max-width: 461px) {
-.headerTextAboutMe {
-    display: none;
-}
+    .headerTextAboutMe {
+        display: none;
+    }
 }
