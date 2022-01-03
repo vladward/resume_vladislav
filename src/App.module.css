@@ -1,3 +1,14 @@
+.wrap {
+
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  background-color: green;
+}
+
 .App {
   background-color: beige;
   display: flex;
