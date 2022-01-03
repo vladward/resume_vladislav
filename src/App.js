@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
 import s from './App.module.css'
-import {Aside} from './components/Aside/Aside'
-import {Content} from './components/Content/Content'
-import {Link} from "react-router-dom"
-import {MyRoutes} from './components/MyRoutes/MyRoutes'
+import {MainContent} from './components/MainContent/MainContent'
+import {PrintVersion} from './components/PrintVersion/PrintVersion'
+import {Language} from './components/Aside/Language/Language'
 
 let initialState = {
     aboutMe: {
@@ -195,42 +194,37 @@ let ruInitialState = {
 }
 
 export const App = () => {
-    const [lang, setlang] = useState(false)
+    const [lang, setLang] = useState(false)
     const [profileData, setProfileData] = useState({...initialState})
     const [profileRuData, setProfileRuData] = useState({...ruInitialState})
+    const [printMode, setPrintMode] = useState(false)
 
     let state = lang ? profileRuData : profileData
 
     return (
         <div className={s.wrapp}>
             <header className={s.head}>
-                <button><Link className={s.button1} to={'print'}>Print Version</Link></button>
-                <MyRoutes/>
+                <Language setLang={setLang}/>
+                <button onClick={() => setPrintMode(!printMode)}>{printMode ? 'Resume Version' : 'Pdf Version'}</button>
             </header>
-            <div className={s.App}>
-                <div className={s.asideContainer}>
-                    <Aside setLang={setlang}
-                           aboutMe={state.aboutMe}
-                           contacts={state.contacts}
-                           contactsTitle={state.contactsTitle}
-                           workWith={state.workingWith}
-                           workWithTitle={state.workingWithTitle}
-                           interests={state.interests}
-                           interestsTitle={state.interestsTitle}
-                    />
-                </div>
-                <div className={s.contentContainer}>
-                    <Content aboutMe={state.aboutMe}
-                             aboutMeTitle={state.aboutMeTitle}
-                             workExp={state.work}
-                             workExpTitle={state.workTitle}
-                             education={state.education}
-                             educationTitle={state.educationTitle}
-                             projects={state.projects}
-                             projectsTitle={state.projectsTitle}
-                    />
-                </div>
-            </div>
+            {printMode && <PrintVersion lang={lang}/>}
+            {!printMode && <MainContent
+                setLang={setLang}
+                aboutMe={state.aboutMe}
+                contacts={state.contacts}
+                contactsTitle={state.contactsTitle}
+                workWith={state.workingWith}
+                workWithTitle={state.workingWithTitle}
+                interests={state.interests}
+                interestsTitle={state.interestsTitle}
+                aboutMe={state.aboutMe}
+                aboutMeTitle={state.aboutMeTitle}
+                workExp={state.work}
+                workExpTitle={state.workTitle}
+                education={state.education}
+                educationTitle={state.educationTitle}
+                projects={state.projects}
+                projectsTitle={state.projectsTitle}/>}
         </div>
     )
 }
