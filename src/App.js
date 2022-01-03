@@ -205,7 +205,10 @@ export const App = () => {
         <div className={s.wrapp}>
             <header className={s.head}>
                 <Language setLang={setLang}/>
-                <button onClick={() => setPrintMode(!printMode)}>{printMode ? 'Resume Version' : 'Pdf Version'}</button>
+                <div className={s.buttonPrint}>
+                    <button
+                        onClick={() => setPrintMode(!printMode)}>{printMode ? 'Resume Version' : 'Pdf Version'}</button>
+                </div>
             </header>
             {printMode && <PrintVersion lang={lang}/>}
             {!printMode && <MainContent
