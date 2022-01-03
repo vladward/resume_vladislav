@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
-import s from './App.module.css';
+import s from './App.module.css'
 import {Aside} from './components/Aside/Aside'
 import {Content} from './components/Content/Content'
+import {Link} from "react-router-dom"
+import {MyRoutes} from './components/MyRoutes/MyRoutes'
 
 let initialState = {
     aboutMe: {
@@ -143,8 +145,8 @@ let ruInitialState = {
             id: 1,
             title: 'Системный администратор - Учреждение здравоохранения "Щучинская центральная районная больница (2014 - 2016)"'
         },
-        {id: 2, title: 'Водитель - Логистическая транспортная компания (2016 - 2021'},
-        {id: 3, title: 'Младший React разработчик (2021 - настоящее время'},
+        {id: 2, title: 'Водитель - Логистическая транспортная компания (2016 - 2021)'},
+        {id: 3, title: 'Младший React разработчик (2021 - настоящее время)'},
     ],
     workTitle: 'Опыт работы:',
     education: [
@@ -200,28 +202,34 @@ export const App = () => {
     let state = lang ? profileRuData : profileData
 
     return (
-        <div className={s.App}>
-            <div className={s.asideContainer}>
-                <Aside setLang={setlang}
-                       aboutMe={state.aboutMe}
-                       contacts={state.contacts}
-                       contactsTitle={state.contactsTitle}
-                       workWith={state.workingWith}
-                       workWithTitle={state.workingWithTitle}
-                       interests={state.interests}
-                       interestsTitle={state.interestsTitle}
-                />
-            </div>
-            <div className={s.contentContainer}>
-                <Content aboutMe={state.aboutMe}
-                         aboutMeTitle={state.aboutMeTitle}
-                         workExp={state.work}
-                         workExpTitle={state.workTitle}
-                         education={state.education}
-                         educationTitle={state.educationTitle}
-                         projects={state.projects}
-                         projectsTitle={state.projectsTitle}
-                />
+        <div className={s.wrapp}>
+            <header className={s.head}>
+                <button><Link className={s.button1} to={'print'}>Print Version</Link></button>
+                <MyRoutes/>
+            </header>
+            <div className={s.App}>
+                <div className={s.asideContainer}>
+                    <Aside setLang={setlang}
+                           aboutMe={state.aboutMe}
+                           contacts={state.contacts}
+                           contactsTitle={state.contactsTitle}
+                           workWith={state.workingWith}
+                           workWithTitle={state.workingWithTitle}
+                           interests={state.interests}
+                           interestsTitle={state.interestsTitle}
+                    />
+                </div>
+                <div className={s.contentContainer}>
+                    <Content aboutMe={state.aboutMe}
+                             aboutMeTitle={state.aboutMeTitle}
+                             workExp={state.work}
+                             workExpTitle={state.workTitle}
+                             education={state.education}
+                             educationTitle={state.educationTitle}
+                             projects={state.projects}
+                             projectsTitle={state.projectsTitle}
+                    />
+                </div>
             </div>
         </div>
     )
