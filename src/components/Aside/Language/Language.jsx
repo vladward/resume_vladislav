@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import s from './../Aside.module.css'
+import s from './../../../App.module.css'
 
 export const Language = (props) => {
     const [onOff, setOnOff] = useState(false)
@@ -36,8 +36,8 @@ export const Language = (props) => {
     }
     return (
         <div className={s.radioContainer}>
-            <div style={styleRu} onClick={onFunction}>Ru</div>
-            <div style={styleEng} onClick={offFunction}>Eng</div>
+            <div className={s.radio1} style={styleRu} onClick={onFunction}>Ru</div>
+            <div className={s.radio2} style={styleEng} onClick={offFunction}>Eng</div>
         </div>
     )
 }
