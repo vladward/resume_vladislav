@@ -22,7 +22,7 @@ export const MyContacts = (props) => {
 
 
             <div className={s.contactText}>
-                <a href="https://www.linkedin.com/in/vlad-malohvey-129350219/">{props.contacts.linkedIn}</a>
+                <a href="https://www.linkedin.com/in/vlad-malohvey/">{props.contacts.linkedIn}</a>
             </div>
 
 
