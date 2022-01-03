@@ -55,7 +55,7 @@ let initialState = {
     education: [
         {
             id: 1,
-            title: 'Information technology software Technological College Educational Institution "The Yanka Kupala State University of Grodno" (2010 - 2014)'
+            title: 'Grodno College of Business and Law (2010 - 2014)'
         },
         {id: 2, title: 'Front-end React developer - It-incubator.by (2021/09 - 2022/02)'},
     ],
