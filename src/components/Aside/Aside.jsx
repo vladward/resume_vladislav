@@ -6,11 +6,11 @@ import {MyInterests} from './MyInterests/MyInterests'
 import {Header} from './Header/Header'
 import {Language} from './Language/Language'
 
-export const Aside = (props) => {    
+export const Aside = (props) => {
     return (
         <div className={s.wrapper}>
             <Header aboutMe={props.aboutMe}/>
-            <Language  setLang={props.setLang}/>
+            <Language setLang={props.setLang}/>
             <MySkills workWith={props.workWith} workWithTitle={props.workWithTitle}/>
             <MyInterests interests={props.interests} interestsTitle={props.interestsTitle}/>
             <MyContacts contacts={props.contacts} contactsTitle={props.contactsTitle}/>
