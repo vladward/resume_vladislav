@@ -58,6 +58,10 @@
     width: 100%;
 }
 
+.githubInfo h2 {
+    padding-bottom: 5px;
+}
+
 .projectItem {
     margin: 0;
 }
