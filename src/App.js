@@ -9,8 +9,8 @@ let initialState = {
         name: 'Vladislav Malohvey',
         profession: 'Frontend Developer',
         description: 'Hi. My name is Vladislav. I am a junior frontend developer. ' +
-            'I really like working in this field. I know English at a basic level. I have about six months of production development experience and I want to develop further.' +
-            ' Calm and balanced, a great desire to learn new technologies. I will be glad to talk.',
+            'I know English at a basic level. I have about six months of production development experience and I want to develop it further.' +
+            ' Calm and balanced, a great desire to learn new technologies. Send me a message if you are interested to hire me.',
     },
     contacts: {
         mail: 'vladward13@gmail.com',
@@ -104,9 +104,9 @@ let ruInitialState = {
         name: 'Владислав Малохвей',
         profession: 'Frontend Developer',
         description: 'Привет. Меня зовут Владислав. Я младший фронтенд разработчик. ' +
-            'Мне очень нравится работать в этой сфере. Знаю английский язык на базовом уровне.' +
+            'Знаю английский язык на базовом уровне.' +
             ' Имею опыт продакшн разработки около полугода и хочу развиваться дальше. Спокойный и уравновешенный, ' +
-            'большое желание учиться новым технологиям. Буду рад пообщаться.',
+            'большое желание учиться новым технологиям. Пришлите мне сообщение, если вы заинтересованы в том, чтобы нанять меня.',
     },
     contacts: {
         mail: 'vladward13@gmail.com',
