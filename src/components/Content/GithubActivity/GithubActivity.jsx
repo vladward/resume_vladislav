@@ -6,7 +6,7 @@ export const GithubActivity = (props) => {
     return (
         <div className={s.githubInfo}>
             <h2>Github activity</h2>
-            <img src={gitImg} alt=""/>
+            <a href="https://github.com/vladward"><img src={gitImg} alt="activity"/></a>
         </div>
     )
 }
